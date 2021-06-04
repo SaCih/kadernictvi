@@ -1,0 +1,25 @@
+{
+  "name": "kadernictvi",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx @11ty/eleventy",
+    "serve": "npx @11ty/eleventy --serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SaCih/kadernictvi.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SaCih/kadernictvi/issues"
+  },
+  "homepage": "https://github.com/SaCih/kadernictvi#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.12.1"
+  },
+  "dependencies": {},
+  "description": ""
+}

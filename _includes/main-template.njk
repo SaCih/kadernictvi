@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+ 
+  
+
+<link rel="apple-touch-icon" sizes="180x180" href="/icon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/icon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/icon/favicon-16x16.png">
+<link rel="manifest" href="/icon/site.webmanifest">
+<link rel="mask-icon" href="/icon/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="/icon/favicon.ico">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-config" content="/icon/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+
+  
+
+  <title>Studio Papilon</title>
+  <link rel="stylesheet" href="/css/style.css">
+
+  <!-- Google fonts: Raleway , sans-serif -->
+  <link rel="preconnect" href="https://fonts.gstatic.com"> 
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <header class="header">
+      <div class="header__contact">
+        <a class="header__contact-insta" 
+        href="https://www.instagram.com/studiopapilon/"><img class="icon" src="/images/icons/brand_instagram_icon_151534.png" alt="logo instagram"></a>
+       <a class="header__contact-face" 
+        href="https://www.facebook.com/studiopapilon"><img class="icon" src="/images/icons/social_facebook_fb_75.png"  alt="logo facebook"></a>
+        <a class="header__contact-email" 
+        href="mailto:studiopapilon@seznam.cz"><img class="icon" src="/images/icons/envelope-regular.svg" alt="logo email"></a>
+
+      
+        <span class="header__contact-phone">Tel. +420 241 732 104</span>
+      </div>
+
+      <div class="header__inner">
+
+        <div class="header__left">
+          
+         <div class="header__logo"><img class="logo" src="/images/Papilon_logo.png"></div>
+       </div>
+      
+        <nav class="menu">
+          <input type="checkbox" class="menu__checkbox" id="menu-checkbox">
+          <label for="menu-checkbox" class="menu__toggler"><span>&#9776;</span></label>
+
+          <ul class="menu__list">
+            <li class="menu__item"><a href="/" class="menu__link">Úvod</a></li>
+            <li class="menu__item"><a href="/sluzby/" class="menu__link">Služby</a></li>
+            <li class="menu__item"><a href="/kavarna/" class="menu__link">Kavárna</a></li>
+            <li class="menu__item"><a href="/cenik/" class="menu__link">Ceník</a></li>
+            <li class="menu__item"><a href="/galerie/" class="menu__link">Galerie</a></li>
+            <li class="menu__item"><a href="/kontakt/" class="menu__link">Kontakt</a></li>
+          </ul>
+        </nav>
+      </div>
+      
+
+      <div class="header__image {{ 'header__image--cafe' if page.fileSlug === 'kavarna' }}">
+      
+      
+      </div>
+
+
+    </header>
+
+    <main class="main">
+ 
+
+    {{  content | safe }}
+
+
+    </main>
+    <footer class="footer">
+      <div class="footer__grid">
+        <div class="footer__grid-column">
+          <h3>Kde nás najdete: </h3>
+
+            <p>Studio Papilon <br>
+               Budějovická 1126/9 <br>
+              140 00 Praha 4</p>
+        </div>
+
+        <div class="footer__grid-column">
+          <img class="mobilelogo" src="/images/icons/logo_papilon_mobile.png" alt="mobilelogo"> </div>
+        
+
+        <div class="footer__grid-column">
+
+          <h3>Telefon:</h3> 
+          <p> +420 777 285 548
+            <br>
+            +420 241 732 104
+          </p>
+
+        </div>
+      </div>
+      
+      <div class="footer__copyright">&copy; Studio Papilon, 2021</div>
+    </footer>
+
+  </div>
+  
+</body>
+
+
+</html>

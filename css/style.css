@@ -1,0 +1,436 @@
+html { box-sizing: border-box; }
+*, ::before, ::after { box-sizing: inherit; }
+
+
+body {
+  margin: 0;
+  font-family: 'Raleway';
+  background-color:rgb(235, 127, 39)
+  
+}
+
+.wrapper {
+  max-width: 66rem;
+  max-height:max-content;
+  margin: 0 auto;
+  background-color: whitesmoke;
+
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 500;
+  
+}
+h2 {
+  font-size: 1.7rem;
+  font-weight: 600;
+  margin-bottom: 50px;
+}
+h3 {font-size: 1rem;}
+
+p {font-size: 20px;
+  font-weight: 200;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+
+/* HEADER */
+
+.header__contact {
+  font-size: 15px;
+  text-align: right;
+  background-color:whitesmoke;
+  color: black;
+  padding: 20px;
+}
+
+
+
+.header__contact-email {
+  margin-top: 10px;
+  margin-right: 30px;
+  padding: 0;
+}
+ .icon {
+  width: 25px;
+  text-decoration: none;
+  border-style:hidden;
+  margin: 5px;
+}
+
+.header__contact {
+  color: black;
+  padding-bottom: 20px;
+  text-align:right;
+  text-decoration-line: none;
+}
+.header__contact-phone span{
+  padding-bottom: 20px;
+  
+}
+
+.header__inner {
+  display: block;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.logo {
+  display: block;
+  margin-bottom: 30px;
+  width: 70%;
+  margin-left: 60px;
+  margin-top: 0;
+  padding:0;
+}
+
+.header__image {
+  min-height: 220px;
+  background: url(./../images/Afro_hair.jpeg) no-repeat right center/cover;
+  margin-top: 30px;
+  opacity: 80%;
+
+}
+.header__image--cafe {
+  background: url(./../images/beans\ header.jpg) no-repeat right center/cover;
+}
+
+
+/* MENU */
+.menu__checkbox {
+  position: absolute;
+  left: -9999px;
+
+}
+
+.menu__toggler {
+  cursor: pointer;
+  font-size: 30px;
+  padding-left: 30px;
+}
+
+.menu__list {
+  display: none; /* u pc se display:none zruší*/
+  list-style: none;
+  margin: 0;
+  padding: 20px;
+  /*
+  display: flex;*/
+}
+
+.menu__item {
+ /* border-right: 1px solid rgb(189, 185, 185);*/
+  margin: 0;
+  padding: 0;
+
+}
+.menu__link {
+  display: block;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+
+}
+ 
+.menu__link:hover {
+  color:tomato;
+}
+.menu__checkbox:checked ~ .menu__list {
+  display:block;
+  text-align: center;
+}
+
+
+
+/* MAIN*/
+.about {
+  display: grid;
+  margin-top: 50px;
+  margin-right: 100px;
+  margin-left: 100px;
+  
+  
+}
+.scissors {
+  display:none;
+}
+
+
+.studio-preview {
+  display: block;
+  justify-items: center;
+}
+
+.studio__image1,
+.studio__image2 {
+  display: none;
+  width: 100%; 
+  padding: 40px;
+  
+}
+
+.grid__column {
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 30px;
+  margin-top: 30px;
+
+}
+.papilon {
+  color:rgb(235, 127, 39)
+}
+
+.cafe-image {
+  width: 100%;
+  min-height: 320px;
+  background: url(./../images/Coffee\ black_white.jpeg) no-repeat right center/cover;
+}
+.cafe-content {
+  margin:100px ;
+}
+
+.studio__image3,
+.studio__image4 {
+  display: none;
+  width: 100%;
+  padding: 40px;
+}
+
+/* FOOTER */
+.footer__grid {
+  background-color: black;
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: 0;
+}
+
+.footer__copyright {
+  text-align: center;
+}
+
+.mobilelogo {
+  display: none;
+}
+
+.footer__grid-column {
+  display: block;
+  margin-left: 50px;
+  margin-top: 50px;
+  
+  
+}
+
+
+/* SLUZBY */
+
+.services {
+  margin: 100px;
+
+}
+.hairdress {
+  margin-bottom: 50px;
+}
+.solarium {
+  margin-bottom: 50px;
+}
+
+/* KAVARNA */
+
+.cafe__grid {
+  display:grid;
+  grid-template-columns: repeat(2,1fr);
+
+}
+.cafe__grid-image {
+  display: none;
+  width:300px;
+  
+}
+
+.cafe__grid-content{
+  grid-column:3/ span 2;
+  padding: 5px;
+  margin: 30px;
+}
+.cafe__logo {
+  display: grid;
+  justify-content: center;
+  padding: 50px;
+  margin: 0;
+  background-color:seashell;
+  object-fit: cover;
+}
+/* CENÍK */
+.pricelist {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+
+}
+.pricelist__item {
+  width: 500px;
+  justify-items: center;
+  padding: 50px;
+  margin-left: 100px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background-color:white;
+  border-style:solid;
+  border-width: 1px;
+  border-color:rgb(238, 234, 234)
+  
+
+}
+
+
+
+
+/* GALERIE */
+
+.gallery {
+  margin: 10px;
+}
+.gallery__grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-auto-rows: 500px;
+  grid-auto-flow: dense;
+	gap: 1.5px;
+
+}
+.gallery__item {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+}
+.contact {
+  display:block;
+  text-align: center;
+
+
+}
+.map {
+  margin-bottom: 30px;
+}
+.photo_item {
+  display: none;
+}
+
+@media screen and (min-width: 800px) {
+  .menu__toggler {
+    display:none;
+  }
+
+  .menu__list {
+    display:flex !important;
+  }
+  .menu__item {
+     border-right: 1px solid rgb(189, 185, 185);
+  }
+
+  .header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+  .footer__grid {
+  display: grid;
+  background-color: black;
+  color: white;
+  grid-template-columns: repeat(3,1fr);
+  padding: 0;
+  margin: 0;
+}
+  .footer__grid-column {
+  margin: 50px;
+  position: relative;
+}
+  .mobilelogo {
+  display:grid;
+  width: 100px;
+  position: absolute;
+  left:62px;
+  bottom:53px;
+}
+  .gallery__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 300px;
+  grid-auto-flow: dense;
+	gap: 1.5px;
+  }
+  .scissors {
+    display:grid;
+    position: fixed;
+    left: 100px;
+    top: 150px;
+    font-size: 60px;
+    
+  }
+  .studio-preview.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+  .studio__image1,
+  .studio__image2 {
+    display: grid;
+    width: 100%;
+  }
+  .studio__image3,
+  .studio__image4 {
+    display: grid;
+    width: 100%;
+  }
+  .cafe__grid-image {
+    display: grid;
+    width:300px;
+    
+  }
+  .contact {
+    display:flex;
+    text-align: justify;
+    padding: 50px;
+    margin: 30px;
+    background-color: white;
+    border-style:solid;
+    border-width: 1px;
+    border-color:rgb(238, 234, 234);
+  }
+
+  .contact__grid {
+    margin: 30px;
+  
+  }
+  .studio-preview-grid2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    height: 100%;
+    gap: 10px;
+   
+  }
+
+  
+  .photo_item {
+    display:grid;
+    width: 100%;
+    padding: 30px;
+    
+  }
+ 
+}
+
+@media screen and (min-width: 1200px) {
+  .gallery__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 300px;
+    grid-auto-flow: dense;
+    gap: 1.5px;
+    }
+  }
