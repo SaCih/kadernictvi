@@ -150,8 +150,7 @@ p {font-size: 20px;
 .about {
   display: grid;
   margin-top: 50px;
-  margin-right: 100px;
-  margin-left: 100px;
+  padding-left: 40px;
   
   
 }
@@ -190,7 +189,7 @@ p {font-size: 20px;
   background: url(./../images/Coffee\ black_white.jpeg) no-repeat right center/cover;
 }
 .cafe-content {
-  margin:100px ;
+  padding:40px;
 }
 
 .studio__image3,
@@ -229,7 +228,7 @@ p {font-size: 20px;
 /* SLUZBY */
 
 .services {
-  margin: 100px;
+  padding: 40px;
 
 }
 .hairdress {
@@ -254,8 +253,8 @@ p {font-size: 20px;
 
 .cafe__grid-content{
   grid-column:3/ span 2;
-  padding: 5px;
-  margin: 30px;
+  padding: 20px;
+  
 }
 .cafe__logo {
   display: grid;
@@ -284,11 +283,28 @@ p {font-size: 20px;
   border-width: 1px;
   border-color:rgb(238, 234, 234)
   
-
 }
 
-
-
+.pricelist__item-others {
+  display:block;
+  
+}
+.pricelist__item-manikura,
+.pricelist__item-PSHINE,
+.pricelist__item-VINYLUX,
+.pricelist__item-SHELLAC,
+.pricelist__item-PLEXIGEL,
+.pricelist__item-modelaz,
+.pricelist__item-parafin {
+  border-style: none;
+  border-width: 1px;
+  width: 100%;
+  text-align:center;
+  margin: 10px;
+  padding: 20px;
+  padding-bottom:0mm;
+  background-color:rgb(238, 234, 234)
+}
 
 /* GALERIE */
 
@@ -423,6 +439,16 @@ p {font-size: 20px;
     padding: 30px;
     
   }
+
+  .pricelist__item-others {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 20px;
+  }
+  
+    
+  
+  
  
 }
 
@@ -434,4 +460,9 @@ p {font-size: 20px;
     grid-auto-flow: dense;
     gap: 1.5px;
     }
+  .pricelist__item {
+    width:100%;
+    padding: 50px;
+    text-align: center;
+  }
   }
